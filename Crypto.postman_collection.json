@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "4a01a963-6193-4fae-904b-72bfce5a4350",
+		"name": "Crypto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6719918",
+		"_collection_link": "https://red-astronaut-482469.postman.co/workspace/CryptoApi~33368c53-3dc8-4f11-92fe-91a6daff7856/collection/6719918-4a01a963-6193-4fae-904b-72bfce5a4350?action=share&source=collection_link&creator=6719918"
+	},
+	"item": [
+		{
+			"name": "Moedas",
+			"item": [
+				{
+					"name": "Todas moedas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/coin"
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar moedas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"name\": \"CAPITOL\",\r\n    \"price\":0.000333,\r\n    \"quantity\": 0.00278\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/coin"
+					},
+					"response": []
+				},
+				{
+					"name": "Moeda por nome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/coin"
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar moedas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"CAP\",\r\n    \"price\": 0.000333,\r\n    \"quantity\": 0.00278\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/coin"
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar moeda",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/coin/11"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
